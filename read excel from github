@@ -1,6 +1,0 @@
-import pandas as pd
-import urllib2
-link = 'https://github.com/AshwiniBaipadithayaMadhusudan/preprocessing/blob/master/ETA_small.xlsx'
-socket = urllib2.urlopen(link)
-xd = pd.ExcelFile(socket)
-df = xd.parse(xd, header=None)
